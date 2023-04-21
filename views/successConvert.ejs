@@ -1,0 +1,28 @@
+<!-- including header -->
+<%- include("partials/header") -%>
+
+<div class="container">
+  
+  <!-- oupput -->
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold ">Exchange Amount</h1>
+      <p class="col-md-8 fs-4 mt-3"> <%= amountEJS %> <%= PrimaryCurrency %> = <%= result %> <%= SecondaryCurrency %> </p>
+      <p> @ 1 <%= PrimaryCurrency %> = <%= exchangeRateEJS %> <%= SecondaryCurrency %> </p>
+      <button button type="button" class="btn btn-primary btn-lg mt-2"><a href="/convert" style="text-decoration: none; color: aliceblue;">Calculate Again</a></button>
+    </div>
+    <div class="card col-lg-6 col-md-12 col-sm-12" >
+        <div class="card-body">
+          <h5 class="card-title">Want to check latest exchange rate?</h5>
+          <p class="card-text">With supporting feature that provide latest exchange rate.</p>
+          <a href="/" class="btn btn-primary">Take me there</a>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+<!-- footer -->
+<%- include("partials/footer") -%>

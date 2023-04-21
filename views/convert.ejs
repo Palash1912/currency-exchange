@@ -1,0 +1,89 @@
+<!-- including header -->
+<%- include("partials/header") -%>
+
+<div class="container">
+  
+  <h1 class="display-5 mt-2">
+    <small class="text-body-secondary">Convert </small>
+    Currency Rate
+    <small class="text-body-secondary"> with different currencies</small>
+  </h1>
+
+  <!-- form -->
+  <form action="/convert" method="post">
+    <div class="row mt-4">
+      
+        <!-- Amount to be converted -->
+        <div class="col-sm-4 mt-4 ">
+            <div class="card border-dark">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Set Amount</h5>
+                <p class="card-text ">Choose amount to be converted</p>
+                <!-- DropDown -->
+                <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1" class="form-label">Input amount</label>
+                    <input type="text" class="form-control" id="exampleFormControlSelect1" name="amount" autocomplete="off">
+                </div>
+            </div>
+            </div>
+        </div>
+
+      <!-- primary currency -->
+      <div class="col-sm-4 mt-4 ">
+        <div class="card text-bg-light border-dark">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Base Currency</h5>
+            <p class="card-text">Choose primary currency</p>
+            <!-- DropDown -->
+            <div class="form-group mt-4">
+              <label for="exampleFormControlSelect2">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect2" name="fromCurrency">
+                <option value="INR">Indian National Rupee</option>
+                <option value="USD">US Dollars</option>
+                <option value="EUR">Euro</option>
+                <option value="AED">United Arab Emirates Dirham</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="THB">Thai Baht</option>
+                <option value="ZAR">South African Rand</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- secondary currency -->
+      <div class="col-sm-4 mt-4">
+        <div class="card text-bg-light border-dark">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Resultant Currency</h5>
+            <p class="card-text">Choose secondary currency</p>
+            <!-- DropDown -->
+            <div class="form-group mt-4">
+              <label for="exampleFormControlSelect3">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect3" name="toCurrency">
+                <option value="EUR">Euro</option>
+                <option value="INR">Indian National Rupee</option>
+                <option value="USD">US Dollars</option>
+                <option value="AED">United Arab Emirates Dirham</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="THB">Thai Baht</option>
+                <option value="ZAR">South African Rand</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-dark mt-4"> Calculate</button>
+  </form>
+
+</div>
+
+<!-- footer -->
+<%- include("partials/footer") -%>

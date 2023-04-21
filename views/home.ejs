@@ -1,0 +1,88 @@
+<!-- including header -->
+<%- include("partials/header") -%>
+
+<div class="container">
+  <!-- heading and intro -->
+  <h1 class="display-4">Home</h1>
+  <p >
+    Welcome to our currency exchange site! Stay up-to-date with the latest currency exchange 
+    rates from around the world and conveniently convert any amount with just a few clicks. 
+    Our user-friendly platform offers quick and reliable access to real-time exchange rates, 
+    making international transactions simpler than ever before.  </p>
+  <br>
+
+  <!-- display text -->
+  <h1 class="display-5 mt-2">
+    <small class="text-body-secondary">Get the </small>
+    Latest Foreign Exchange 
+    <small class="text-body-secondary"> rates</small>
+  </h1>
+
+  <!-- form -->
+  <form action="/" method="post">
+    <div class="row ">
+
+      <!-- primary currency -->
+      <div class="col-sm-4 mt-4 ">
+        <div class="card text-bg-light border-dark">
+          <div class="card-body">
+            <h5 class="card-title text-primary">From</h5>
+            <p class="card-text">Choose primary currency</p>
+            <!-- DropDown -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1" name="fromCurrency">
+                <option value="USD">US Dollars</option>
+                <option value="EUR">Euro</option>
+                <option value="INR">Indian National Rupee</option>
+                <option value="AED">United Arab Emirates Dirham</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="THB">Thai Baht</option>
+                <option value="ZAR">South African Rand</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- secondary currency -->
+      <div class="col-sm-4 mt-4">
+        <div class="card text-bg-light border-dark">
+          <div class="card-body">
+            <h5 class="card-title text-primary">To</h5>
+            <p class="card-text">Choose resultant currency</p>
+            <!-- DropDown -->
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect2" name="toCurrency">
+                <option value="INR">Indian National Rupee</option>
+                <option value="USD">US Dollars</option>
+                <option value="EUR">Euro</option>
+                <option value="AED">United Arab Emirates Dirham</option>
+                <option value="GBP">Pound Sterling</option>
+                <option value="JPY">Japanese Yen</option>
+                <option value="CNY">Chinese Yuan</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="THB">Thai Baht</option>
+                <option value="ZAR">South African Rand</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-dark mt-3"> Check</button>
+  </form>
+
+  
+  
+</div>
+
+
+<!-- footer -->
+<%- include("partials/footer") -%>
+    
+    
