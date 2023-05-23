@@ -3,12 +3,17 @@
     padding-bottom: 70px;
 }
 
+.footer-padding {
+	padding: 60px 0;
+}
+
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-  }
+}
 
 .footer{
     text-align: center;
